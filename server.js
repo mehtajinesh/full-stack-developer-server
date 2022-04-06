@@ -11,4 +11,4 @@ app.use(express.json());
 helloController(app);
 userController(app);
 tuitsController(app);
-app.listen(8080);
+app.listen(process.env.PORT || 4000)
