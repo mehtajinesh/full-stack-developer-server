@@ -6,7 +6,8 @@ import userController
 import tuitsController from "./controllers/tuits-controller/index.js";
 import cors from 'cors';
 import mongoose from "mongoose";
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
     || 'mongodb://localhost:27017/webdev'
