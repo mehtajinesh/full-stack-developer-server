@@ -18,4 +18,7 @@ app.use(express.json());
 helloController(app);
 userController(app);
 tuitsController(app);
+app.get('/', (request, response) => {
+    response.send("Welcome to WebDev");
+});
 app.listen(process.env.PORT || 4000)
